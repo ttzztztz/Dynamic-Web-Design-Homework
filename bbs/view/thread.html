@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title><?php echo $thread["subject"];?> - hzytql论坛</title>
+    </head>
+    <body>
+        <h2><?php echo $thread["subject"];?></h2>
+        <h4><?php echo date("Y-m-d H:i:s",$thread["time"]);?></h4>
+        <h4><?php echo $thread["username"];?></h4>
+        <hr>
+        <div>
+            <?php echo $thread["message"];?>
+        </div>
+    </body>
+</html>
